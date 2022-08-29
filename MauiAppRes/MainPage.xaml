@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppRes.MainPage">
+    
+    <ContentPage.Resources>
+
+        <Grid x:Key="ImagePath" x:Shared="false" Background="White" WidthRequest="200" HeightRequest="100">
+            <Path Aspect="None" Data="F1M99,51C90.5,51,84,57.5,84,66C84,74.5,90.5,81,99,81C107.5,81,114,74.5,114,66C114,57.5,107.5,51,99,51 M1,14L69,14L69,56L1,56z" Fill="#FF12579B"/>
+            <Path Stroke="Black" Data="M13.908992,16.207977 L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983Z" />
+            <Path Stroke="Red" Data="M5,1 L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983Z" />
+            <Path Stroke="Pink" Data="M3,2 L20,10 15,25 12,5Z" />
+        </Grid>
+
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="5" Padding="15" VerticalOptions="Start">
+
+            <Label Text="Icon instance 1:"/>
+            <Frame Content="{StaticResource ImagePath}" BorderColor="Transparent" Padding="0"/>
+
+            <Label Text="Icon instance 2:"/>
+
+            <!--WinUI Exception: {"Catastrophic failure (0x8000FFFF (E_UNEXPECTED))"}-->
+            <!--Android Exception  -->
+            <!--iOS No exception, screen area is just blank -->
+            <Frame Content="{StaticResource ImagePath}"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
