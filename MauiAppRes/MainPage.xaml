@@ -23,7 +23,7 @@
             <Label Text="Icon instance 2:"/>
 
             <!--WinUI Exception: {"Catastrophic failure (0x8000FFFF (E_UNEXPECTED))"}-->
-            <!--Android Exception  -->
+            <!--Android Exception: Java.Lang.IllegalStateException: 'The specified child already has a parent. You must call removeView() on the child's parent first.' -->
             <!--iOS No exception, screen area is just blank -->
             <Frame Content="{StaticResource ImagePath}"/>
             
