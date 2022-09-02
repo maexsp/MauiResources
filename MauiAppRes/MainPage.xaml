@@ -42,7 +42,7 @@
 
             <!-- WinUI: 30 images need about 40 sec to load-->
             
-            <!-- Android: 30 images will not load on Android emulator and Android Samsung Galaxy S22
+            <!-- Android: 30 images will not load on Android emulator and also not Android Samsung Galaxy S22
 
             output:
 
