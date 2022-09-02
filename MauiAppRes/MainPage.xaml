@@ -3,29 +3,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppRes.MainPage">
     
-    <ContentPage.Resources>
-
-        <Grid x:Key="ImagePath" x:Shared="false" Background="White" WidthRequest="200" HeightRequest="100">
-            <Path Aspect="None" Data="F1M99,51C90.5,51,84,57.5,84,66C84,74.5,90.5,81,99,81C107.5,81,114,74.5,114,66C114,57.5,107.5,51,99,51 M1,14L69,14L69,56L1,56z" Fill="#FF12579B"/>
-            <Path Stroke="Black" Data="M13.908992,16.207977 L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983Z" />
-            <Path Stroke="Red" Data="M5,1 L32.000049,16.207977 32.000049,31.999985 13.908992,30.109983Z" />
-            <Path Stroke="Pink" Data="M3,2 L20,10 15,25 12,5Z" />
-        </Grid>
-
-    </ContentPage.Resources>
-
     <ScrollView>
         <VerticalStackLayout Spacing="5" Padding="15" VerticalOptions="Start">
 
-            <Label Text="Icon instance 1:"/>
-            <Frame Content="{StaticResource ImagePath}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath1}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath2}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath3}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath4}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath5}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath6}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath7}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath8}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath9}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath10}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath11}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath12}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath13}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath14}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath15}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath16}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath17}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath18}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath19}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath20}" BorderColor="Transparent" Padding="0"/>
+            
+            <!-- With 20 images only the app will load on android but needs about 15 sec for startup -->
+            
+            <Frame Content="{StaticResource BigImagePath21}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath22}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath23}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath24}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath25}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath26}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath27}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath28}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath29}" BorderColor="Transparent" Padding="0"/>
+            <Frame Content="{StaticResource BigImagePath30}" BorderColor="Transparent" Padding="0"/>
 
-            <Label Text="Icon instance 2:"/>
+            <!-- WinUI: 30 images need about 40 sec to load-->
+            
+            <!-- Android: 30 images will not load on Android emulator and Android Samsung Galaxy S22
 
-            <!--WinUI Exception: {"Catastrophic failure (0x8000FFFF (E_UNEXPECTED))"}-->
-            <!--Android Exception: Java.Lang.IllegalStateException: 'The specified child already has a parent. You must call removeView() on the child's parent first.' -->
-            <!--iOS No exception, screen area is just blank -->
-            <Frame Content="{StaticResource ImagePath}"/>
+            output:
+
+            [name.mauiappre] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 15MB/30MB, paused 12us,12us total 24.487ms
+            [monodroid-gc] 46637 outstanding GREFs. Performing a full GC!
+            [name.mauiappre] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 15MB/30MB, paused 12us,11us total 24.501ms
+            [monodroid-gc] 46638 outstanding GREFs. Performing a full GC!
+            [name.mauiappre] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 15MB/30MB, paused 11us,11us total 25.450ms
+            [monodroid-gc] 46639 outstanding GREFs. Performing a full GC!
+            [name.mauiappre] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 15MB/30MB, paused 11us,11us total 24.772ms
+            [monodroid-gc] 46640 outstanding GREFs. Performing a full GC!
+            
+            -->
             
         </VerticalStackLayout>
     </ScrollView>
