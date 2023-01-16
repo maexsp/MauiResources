@@ -319,8 +319,7 @@
     <ScrollView>
         <VerticalStackLayout Spacing="5" Padding="15" VerticalOptions="Start">
 
-            <!-- wait for fix of https://github.com/dotnet/maui/issues/9089 -->
-            
+            <!-- wait for fix of https://github.com/dotnet/maui/issues/9089 -->            
             
             <Label Text="Icon instance 1:"/>
             <ContentView ControlTemplate="{StaticResource ImagePathTemplate}"/>
